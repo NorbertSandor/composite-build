@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/library" name="library">
+                <projects>
+                  <project path="$PROJECT_DIR$/library" />
+                  <project path="$PROJECT_DIR$/library/gradle-plugin" />
+                  <project path="$PROJECT_DIR$/library/utils" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/application" name="application">
+                <projects>
+                  <project path="$PROJECT_DIR$/application" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/application" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/library/gradle-plugin" />
+            <option value="$PROJECT_DIR$/library/utils" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
